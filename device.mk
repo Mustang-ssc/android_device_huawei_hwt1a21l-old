@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product-if-exists, vendor/huawei/cherry/cherry-vendor.mk)
+$(call inherit-product-if-exists, vendor/huawei/hwt1a21l/hwt1a21l-vendor.mk)
 
 # NFC
 PRODUCT_COPY_FILES += \

@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_cherry.mk
+    $(LOCAL_DIR)/full_hwt1a21l.mk

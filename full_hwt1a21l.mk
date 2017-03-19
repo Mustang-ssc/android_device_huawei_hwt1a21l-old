@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/huawei/cherry/device.mk)
+$(call inherit-product, device/huawei/hwt1a21l/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cherry
-PRODUCT_NAME := full_cherry
+PRODUCT_DEVICE := hwt1a21l
+PRODUCT_NAME := full_hwt1a21l
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := cherry
+PRODUCT_MODEL := hwt1a21l
 PRODUCT_MANUFACTURER := HUAWEI

@@ -59,64 +59,18 @@ void vendor_load_properties()
             break;
     fin.close();
 
-    /* C8817D */
+    /* hwt1a21l */
     if (buf.find("C8817D") != std::string::npos) {
-        property_set("ro.product.model", "C8817D");
-        property_set("ro.product.device", "C8817D");
-        property_set("ro.build.product", "C8817D");
+        property_set("ro.product.model", "hwt1a21l");
+        property_set("ro.product.device", "hwt1a21l");
+        property_set("ro.build.product", "hwt1a21l");
         property_set("persist.radio.multisim.config", "dsds");
     }
-    /* C8817E */
+    /* hwt1a21w */
     else if (buf.find("C8817E") != std::string::npos) {
-        property_set("ro.product.model", "C8817E");
-        property_set("ro.product.device", "C8817E");
-        property_set("ro.build.product", "C8817E");
+        property_set("ro.product.model", "hwt1a21w");
+        property_set("ro.product.device", "hwt1a21w");
+        property_set("ro.build.product", "hwt1a21w");
     }
-    /* G621-TL00 */
-    else if (buf.find("G621-TL00") != std::string::npos) {
-        property_set("ro.product.model", "G621-TL00");
-        property_set("ro.product.device", "G621-TL00");
-        property_set("ro.build.product", "G621-TL00");
-        property_set("persist.radio.multisim.config", "dsds");
-    }
-    /* G620S-UL00 */
-    else if (buf.find("G620S-UL") != std::string::npos) {
-        property_set("ro.product.model", "G620S-UL00");
-        property_set("ro.product.device", "G620S-UL00");
-        property_set("ro.build.product", "G620S-UL00");
-        property_set("persist.radio.multisim.config", "dsds");
-    }
-    /* G620S-L01 */
-    else if (buf.find("G620S-L01") != std::string::npos) {
-        property_set("ro.product.model", "G620S-L01");
-        property_set("ro.product.device", "G620S-L01");
-        property_set("ro.build.product", "G620S-L01");
-    }
-    /* G620S-L02 */
-    else if (buf.find("G620S-L02") != std::string::npos) {
-        property_set("ro.product.model", "G620S-L02");
-        property_set("ro.product.device", "G620S-L02");
-        property_set("ro.build.product", "G620S-L02");
-    }
-    /* Che1-CL10 */
-    else if (buf.find("Che1-CL10") != std::string::npos) {
-        property_set("ro.product.model", "Che1-CL10");
-        property_set("ro.product.device", "Che1-CL10");
-        property_set("ro.build.product", "Che1-CL10");
-        property_set("persist.radio.multisim.config", "dsds");
-    }
-    /* Che1-CL20 */
-    else if (buf.find("Che1-CL20") != std::string::npos) {
-        property_set("ro.product.model", "Che1-CL20");
-        property_set("ro.product.device", "Che1-CL20");
-        property_set("ro.build.product", "Che1-CL20");
-        property_set("persist.radio.multisim.config", "dsds");
-    }
-    /* Che1-L04 */
-    else if (buf.find("Che1-L04") != std::string::npos) {
-        property_set("ro.product.model", "Che1-L04");
-        property_set("ro.product.device", "Che1-L04");
-        property_set("ro.build.product", "Che1-L04");
-        property_set("persist.radio.multisim.config", "dsds");
-    }
+
 }

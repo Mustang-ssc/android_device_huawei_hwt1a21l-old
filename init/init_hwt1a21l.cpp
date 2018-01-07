@@ -60,14 +60,14 @@ void vendor_load_properties()
     fin.close();
 
     /* hwt1a21l */
-    if (buf.find("C8817D") != std::string::npos) {
+    if (buf.find("hwt1a21l") != std::string::npos) {
         property_set("ro.product.model", "hwt1a21l");
         property_set("ro.product.device", "hwt1a21l");
         property_set("ro.build.product", "hwt1a21l");
         property_set("persist.radio.multisim.config", "dsds");
     }
     /* hwt1a21w */
-    else if (buf.find("C8817E") != std::string::npos) {
+    else if (buf.find("###") != std::string::npos) {
         property_set("ro.product.model", "hwt1a21w");
         property_set("ro.product.device", "hwt1a21w");
         property_set("ro.build.product", "hwt1a21w");

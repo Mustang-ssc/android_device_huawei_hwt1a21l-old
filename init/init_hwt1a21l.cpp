@@ -59,18 +59,24 @@ void vendor_load_properties()
             break;
     fin.close();
 
-    /* hwt1a21l */
+    /* T1-A21l */
     if (buf.find("hwt1a21l") != std::string::npos) {
-        property_set("ro.product.model", "hwt1a21l");
+        property_set("ro.product.model", "T1-A21L");
         property_set("ro.product.device", "hwt1a21l");
-        property_set("ro.build.product", "hwt1a21l");
-        property_set("persist.radio.multisim.config", "dsds");
+        property_set("ro.build.product", "T1-A21L");
     }
-    /* hwt1a21w */
+    /* T1-A21w */
     else if (buf.find("###") != std::string::npos) {
-        property_set("ro.product.model", "hwt1a21w");
+        property_set("ro.product.model", "T1-A21W");
+        property_set("ro.product.device", "hwt1a21l");
+        property_set("ro.build.product", "T1-A21W");
+    }
+
+    /* T1-A23l */
+    else if (buf.find("###") != std::string::npos) {
+        property_set("ro.product.model", "T1-A23L");
         property_set("ro.product.device", "hwt1a21w");
-        property_set("ro.build.product", "hwt1a21w");
+        property_set("ro.build.product", "T1-A23L");
     }
 
 }
